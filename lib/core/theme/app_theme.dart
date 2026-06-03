@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 const _seedColor = Color(0xFF2563EB);
+const kAppFontFamily = 'PingFangSC';
 
 ThemeData buildAppTheme(Brightness brightness) {
   final isDark = brightness == Brightness.dark;
@@ -19,6 +20,7 @@ ThemeData buildAppTheme(Brightness brightness) {
 
   return ThemeData(
     useMaterial3: true,
+    fontFamily: kAppFontFamily,
     brightness: brightness,
     colorScheme: colorScheme,
     scaffoldBackgroundColor: scaffoldBg,
